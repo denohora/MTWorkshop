@@ -1,0 +1,41 @@
+Trajectory cleaning directions
+
+* Prep
+
+1. Open Analyser (from MT)
+
+2. Click Load Folder and choose one of the folders of data (e.g., estroop_trial_expt1)
+
+3. Click Import (click yes to import log files too)
+	a. put all of the trials in the far left box into one of the two boxes (condition 1 or 2)
+	b. click on Responses and Mapping tab
+	c. in this section, click on Add Remap
+	d. when it says Click the source stimulus, click on the top left stimulus
+	e. when it says Click o the default compare stimulus, click on the top right
+	f. when it says Click the destination stimulus, click on the top right again
+	g. Click End Remap
+	h. Click the Restrictions tab
+	i. Click Exclude incorrect responses to remove the X
+	j. Clck Go! at the bottom of the screen
+
+4. Click Visualise
+	a. You will see lots of trajectories on the screen - if our conditions made sense (e.g., if we knew that jom was the CS+ and beh was CS-, then we could pick conditions in the Import section that would allow us to visualize the differences
+	b. we cant do this because the stimuli were different for everyone.
+
+* Cleaning
+
+5.  In the left hand columns, you will see lots of data files.  You can probably work with two or three at a time depending onthe number of trials per subject.
+	a. Right click and select 'none'.  Then select two or three participants using the check boxes.  (Analyser won't let you have nothing ticked.  Don't worry about this)
+	b. When asked to re-import, quickly check that your previous options (see above) havent changed.  Click Go!
+	c. Click and drag on the trajectoires to create boxes that select trajectories.  The details of the rajectory will apear in the bottom right.  Click on the trajectory details on the bottom right and use up and down arrow to cycle through the trajectories and find dodgy trajectories. 
+	d Exclusions: You will need to exclude looping trajectories and those that leave the screen.  If you see trajectories that are shaky or otherwise strange, remove them (sometimes you may even need to remove a whole participant).
+	e.  After selecting trials to remove, click on rajectory functions and select 'remove single trajectory'.  Revisualise until you removed all the didgy trajectories.  Click Save to save the exclusions.
+	f. Start at stage a and repeat until you've cleaned all participants trajectories.
+	
+* Output
+	
+6. Click Compute
+	a. when tasks about outlier screening, click no (we can do that in R)
+
+6. Click Output to csv - name the file
+

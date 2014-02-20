@@ -1,0 +1,103 @@
+MOUSETRACKER WORKSHOP
+
+http://mousetracker.jbfreeman.net/help/index.htm
+
+********************************  1. DESIGNER  ******************************************
+http://mousetracker.jbfreeman.net/help/creating.htm
+
+Double-click and choose McKinstry.csv
+
+a. Load .CSV and Save .CSV obvious.  Edit .CSV calls Excel to edit details of the csv (trials)
+
+b. The top bar shows the file that we're working on
+
+c. Main Window shows set up of all buttons on the screen
+
+d. Start and response buttons section
+    - the large box shows the buttons that have been designed 
+    (see these in the main window - the current button is in red)
+    - to the right, the properties of each button are presented
+    - click on each button to see the properties change
+    (the red button will change in the main window)
+    * to change properties, simply type in the relevant box and press Set
+    (observe the changes in the main window)
+    * to add buttons, click the plus sign next to the main window
+    - then change default properties as before
+    * test symmetry
+    
+e. Colors and fonts section
+    - adjust color of the screen here
+    (this will change in the main window)
+    - adjust color, size and type of font for text stimuli
+    
+f. Stimulus location
+	- adjust location
+    (this will change in the main window)
+
+g. Click Edit .CSV (you can also use XL or another spreadsheet outside Designer)
+    i. Type - denotes the type of stimulus in columns 2 (Stimulus) e.g., 1 = pic
+    ii. Stimulus - the word/image/sound/combination to be presented
+    iii. Cond - the name for the condition
+    iv.  Rand - Randomisation [0 - none, 1 - block 1, 2 - block etc]
+    v. Correct - which response (see columns
+    vi. Default-compare - which response to compare with
+    vii. Response 1 - text if word, ~filename for pic
+    viii. Response 2 - text if word, ~filename for pic
+    ix. … if there are more responses
+
+********************************  2. RUNNER  ******************************************
+
+Click Runner.exe and run McKinstry.csv
+
+********************************  3. ANALYSER  ******************************************
+
+** Main Analyser Window
+a. To begin, click Load File (if you just have one file to load) or Load Folder (if you have many)
+   - Click yes to import log files too)
+	[files can be seen in panel on left of window]
+	
+b. Click Import
+   
+** Import Window ** 
+    * Main tab
+        i. put the condition labels in the far left box into one of the two boxes 
+        (condition 1 or 2) as required
+        NB - if you wish to use Analyser just to process multiple .mt data files into .csv for R/matlab, 
+        then designation here does not matter, but you must ensure that all condition 
+        labels are in one of the condition boxes)
+	
+		ii. click on Responses and Mapping tab
+    
+    * Responses and Mapping tab
+        iii. in this section, click on Add Remap
+        iv. when it says Click the source stimulus, click on the top left stimulus
+        v. when it says Click o the default compare stimulus, click on the top right
+	vi. when it says Click the destination stimulus, click on the top right again
+	vii. Click End Remap
+	    
+	viii. Click the Restrictions tab
+	
+    * Restrictions tab
+	ix. Click to remove X from Exclude incorrect responses (we *do not* want to exclude)
+	
+	x. Click Go! at the bottom of the screen
+
+** Main Analyser Window
+c. Click Visualise
+	[You will see lots of trajectories on the screen - if our conditions made sense 
+	we can now see the differences between conditions]
+	[If you are just processing, then these presentations will not be informative]
+
+d. Click Compute
+	Adjust for outliers as you wish [you may wish to use R/matlab for this]
+
+e. Click Output to .csv and name file
+
+** Open new .csv file in xl or other spreadsheet program 
+NB - automatically provides time normalized tracks
+
+
+
+
+
+
