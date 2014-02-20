@@ -5,7 +5,7 @@ http://mousetracker.jbfreeman.net/help/index.htm
 ********************************  1. DESIGNER  ******************************************
 http://mousetracker.jbfreeman.net/help/creating.htm
 
-Open the workshop files folder and double-click to choose Mdesigner_example.csv
+Open the workshop files folder and double-click to choose designer_example.csv
 
 a. Load .CSV and Save .CSV obvious.  Edit .CSV calls Excel to edit details of the csv (trials)
 
