@@ -33,7 +33,7 @@ mt.plot(sampledata[sampledata$code == "model_h",],
         xlim = c(-1,1), ylim = c(0,1.2), type = "l", col = "red" ) 
 mt.plot(sampledata[sampledata$code == "model_m",], NewPlot = F,
         xlim = c(-1,1), ylim = c(0,1.2), type = "l", col = "green" ) # uses "plot"s defaults
-
+# average trajectory for the model_m condition
 
 
 
